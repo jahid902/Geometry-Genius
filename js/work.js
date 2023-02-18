@@ -6,6 +6,11 @@ const up2Text = text + upText;
 const finalText = up2Text;
 
 
+document.getElementById("divert-btn").addEventListener("click", function(){
+
+    window.location.href = "divert-page.html";
+})
+
 document.getElementById("tri-btn").addEventListener("click", function(){
    
     const value1 = document.getElementById("tri-1").value;
@@ -98,21 +103,12 @@ document.getElementById("ellip-btn").addEventListener("click", function(){
     sum += 1;   
     setTableData(sum, title, totalAreaFix);    
 })
+// -----------------
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+// common functions used in this project 
 function inputFieldValue(id){
     const inputCapture = document.getElementById(id);
     const inputValue = inputCapture.value;
