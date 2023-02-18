@@ -5,6 +5,12 @@ const upText = text2.sup();
 const up2Text = text + upText;
 const finalText = up2Text;
 
+const newText = 'm';
+const text3 = '2';
+const upText3 = text3.sup();
+const up3Text = newText + upText3;
+const finalText3 = up3Text;
+
 
 document.getElementById("divert-btn").addEventListener("click", function(){
 
@@ -125,7 +131,7 @@ function setTableData(sum, elementName, resultValue){
     <td>${elementName}</td>
     <td>${resultValue}${finalText}</td>
     <button class="btn bg-blue-400 lowercase p-1.5 mt-2 rounded-md text-white">
-    convert to m2</button>
+    convert to ${finalText3}</button>
     `     
     table.appendChild(tr);
  }

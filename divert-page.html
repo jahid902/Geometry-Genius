@@ -9,18 +9,50 @@
   </head>
 
   <body>
-    <section class="text-center mt-5 ">
-      <h1 class="text-2xl">What is DOM and what is the purpose of DOM?</h1>
-      <p class="text-xl border-b-2"></p>
+    <section class="text-center mt-5 px-6">
+      <h1 class="text-2xl mb-4">What is DOM and what is the purpose of DOM?</h1>
+      <p class="text-xl border-b-2">The meaning of DOM is - Document Object Model. Its Document 
+        refers as file, objects refer as tags and elements and lastly model refers to layout structure.
+        Dom represents the HTML document  as a tree structure. Its a programming interface or an API 
+        which can be used by any programming language. Its also an object oriented representation of the web page 
+        which can be easily modified by any scripting language such as javascript. By using DOM we can easily 
+        access, read, update and change its content. Which is one of the huge advantage of DOM.  
+      </p>
       <br>
-      <h1 class="text-2xl"> How will you select HTML elements using DOM? Name the DOM methods.</h1>
-      <p class="text-xl border-b-2"></p>
+      <h1 class="text-2xl mb-4"> How will you select HTML elements using DOM? Name the DOM methods.</h1>
+      <p class="text-xl ">In 5 ways we can select a HTML element by using DOM. Some selectors select 
+        one element while some selectors selects all element. Here are 5 methods below to select an element - 
+        <ul class="border-b-2 text-lg">
+        <li>Single element by id: getElementById()</li>
+        <li>Single element by css selector: querySelector()</li>
+        <li>Multiple elements by css selector: querySelectorAll()</li>
+        <li>Multiple elements by class: getElementsByClassName()</li>
+        <li>Multiple elements by tag: getElementsByTagName()</li>
+      </ul>
+      </p>
       <br>
-      <h1 class="text-2xl">What is event bubble?</h1>
-      <p class="text-xl border-b-2"></p>
+      <h1 class="text-2xl mb-4">What is event bubble?</h1>
+      <p class="text-xl border-b-2">
+        When an event happens on an element, it first runs the handlers on it, then on its parent, 
+        then all the way up on other ancestors and it keeps going until it reaches to the top.This process is called bubbling, because events bubble from the inner 
+        element up through parents like a bubble in the water. Let's say, 
+        If there are two elements, element 1 and element 2. Element 2 is inside element 1 and we attach an event handler with both the elements lets say onClick.
+        Now when we click on element 2 then eventHandler for both the elements will be executed. Now here in which order the event will execute.
+        If the event attached with element 1 executes first it is called event capturing and if the event attached with element 2 executes first this is called 
+        event bubbling. As per W3S the event will start in the capturing phase until it reaches the target comes back to the element and then it starts bubbling.
+      </p>
       <br>
-      <h1 class="text-2xl">What is a callback function and why will you use it?</h1>
-      <p class="text-xl border-b-2"></p>
+      <h1 class="text-2xl mb-4">What is a callback function and why will you use it?</h1>
+      <p class="text-xl border-b-2">
+        In javascript function are objects, so we can send objects to function as parameter.
+        So, we can also pass functions as parameters to other functions and call them inside 
+        the outer functions. So a function that is passed to another function as a parameter is a callback function.
+        In JavaScript, the way to create a callback function is to pass it as a parameter to another function, and then
+        call it back right after something has happened or some task is completed.
+        JavaScript runs code from top-down order but in some cases that code must run after something else happens and also not sequentially.
+        Callbacks make sure that a function is not going to run before a task is completed but will run right after the task has completed. Thus makes the code safe from 
+        problems and errors.
+      </p>
       
     </section>
 
