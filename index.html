@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <header>
-    <div class="navbar bg-cyan-100 lg:w-[95%] mx-auto lg:px-5 rounded-md">
+    <div class="navbar bg-indigo-100 lg:w-[95%] mx-auto lg:px-5 rounded-md">
       <div class="flex-1">
         <p>
           <span class="font-bold text-4xl">Interactive</span> <br /><span
@@ -23,10 +23,11 @@
         </p>
       </div>
       <div class="flex-none">
-        <button class="btn btn-square bg-blue-500 px-10 py-3">Blog</button>
+        <button class="btn btn-square bg-blue-500 px-14 py-4">Blog</button>
       </div>
     </div>
   </header>
+  <body>
   <main>
     <section class="mt-5 md:px-6 lg:px-8 flex flex-col md:flex-row lg:flex-row
     gap-4">
@@ -37,11 +38,11 @@
             <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Triangle</h2>
+            <h2 class="card-title" id="tri-title">Triangle</h2>
             <p>Area (A) = 0.5 x b x h</p>
             <div class="flex gap-2">
               <input
-                id=""
+                id="tri-1"
                 class="bg-gray-200 px-2 rounded w-[50%]"
                 type="number"
                 name=""
@@ -52,13 +53,13 @@
                 class="bg-gray-200 px-2 rounded w-[50%]"
                 type="number"
                 name=""
-                id=""
+                id="tri-2"
                 placeholder="h"
               />
               <span>cm</span>
             </div>
             <div class="card-actions">
-              <button class="btn bg-blue-500 mt-2 px-20 text-base font-semibold">Calculate</button>
+              <button id="tri-btn" class="btn bg-blue-500 mt-2 px-20 text-base font-semibold">Calculate</button>
             </div>
           </div>
         </div>
@@ -214,16 +215,16 @@
         </div>
       </div>
       <div>
-        <div class="overflow-x-auto">
+        <div class="">
             <table class="table w-full md:w-[30%] lg:w-[30%] ">
               <!-- head -->
               <thead>
-                <td>No.</td>
-                <td>Name</td>
-                <td>Area Calculation</td>
-                <td>Convert</td>
+                <td class="text-lg">No.</td>
+                <td class="text-lg">Name</td>
+                <td class="text-lg">Area Calculation</td>
+                <td class="text-lg">Convert</td>
               </thead>
-              <tbody>
+              <tbody id="table-body">
                 
                 <!-- <tr>
                   <th>1</th>
@@ -237,9 +238,7 @@
           </div>
       </div>
     </section>
-  </main>
-
-  <body>
-    <script src="js/work.js"></script>
+  </main> 
+  <script src="js/work.js"></script>
   </body>
 </html>
