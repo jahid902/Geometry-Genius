@@ -11,6 +11,8 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   </head>
   <header>
     <div class="navbar bg-indigo-100 lg:w-[95%] mx-auto lg:px-5 rounded-md">
@@ -31,9 +33,9 @@
   <main>
     <section class="mt-5 md:px-6 lg:px-8 flex flex-col md:flex-row lg:flex-row
     gap-4">
-      <div class="w-[100%] md:w-[70%] lg:w-[70%]  
+      <div  class="w-[100%] md:w-[70%] lg:w-[70%]  
       grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div  class="card w-96 bg-base-100 shadow-xl w-full">
+        <div id="container" class="card w-96 bg-base-100 shadow-xl w-full">
           <figure class="px-10 pt-10">
             <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -63,7 +65,7 @@
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl w-full">
+        <div id="container-1" class="container card w-96 bg-base-100 shadow-xl w-full">
           <figure class="px-10 pt-10">
             <img src="images/rectangle.png" alt="Shoes" class="" />
           </figure>
@@ -93,7 +95,7 @@
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl w-full">
+        <div id="container-2" class="card w-96 bg-base-100 shadow-xl w-full">
           <figure class="px-10 pt-10">
             <img src="images/parallelogram.png" alt="Shoes" class="" />
           </figure>
@@ -123,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl w-full">
+        <div id="container-3" class="container card w-96 bg-base-100 shadow-xl w-full">
           <figure class="px-10 pt-10">
             <img src="images/rhombus.png" alt="Shoes" class="" />
           </figure>
@@ -153,7 +155,7 @@
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl w-full">
+        <div id="container-4" class="container card w-96 bg-base-100 shadow-xl w-full">
           <figure class="px-10 pt-10">
             <img src="images/pentagon.png" alt="Shoes" class="" />
           </figure>
@@ -183,7 +185,7 @@
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl w-full">
+        <div id="container-5" class="container card w-96 bg-base-100 shadow-xl w-full">
           <figure class="px-10 pt-10">
             <img src="images/ellipse.png" alt="Shoes" class="" />
           </figure>

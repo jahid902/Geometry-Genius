@@ -1,3 +1,5 @@
+// some outside works such as number change and superscript text-------------
+
 let sum = 0;
 const text = 'cm';
 const text2 = '2';
@@ -11,6 +13,7 @@ const upText3 = text3.sup();
 const up3Text = newText + upText3;
 const finalText3 = up3Text;
 
+// Click event works ------------------------------------------------
 
 document.getElementById("divert-btn").addEventListener("click", function(){
 
@@ -109,12 +112,97 @@ document.getElementById("ellip-btn").addEventListener("click", function(){
     sum += 1;   
     setTableData(sum, title, totalAreaFix);    
 })
-// -----------------
+
+// Random color functions ------------------------------------------
+
+$(function(){
+    var $container = $('#container');
+
+    $container.mouseenter(function(){
+      var rgb = [
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255)
+      ]; 
+      $container
+        .css('background-color', 'rgb(' + rgb.join(',') + ')')
+        .css('color', 'rgb(' + [255-rgb[0], 255-rgb[1], 255-rgb[2]].join(',') + ')');
+    });
+  });
+$(function(){
+    var $container = $('#container-1');
+
+    $container.mouseenter(function(){
+      var rgb = [
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255)
+      ]; 
+      $container
+        .css('background-color', 'rgb(' + rgb.join(',') + ')')
+        .css('color', 'rgb(' + [255-rgb[0], 255-rgb[1], 255-rgb[2]].join(',') + ')');
+    });
+  });
+$(function(){
+    var $container = $('#container-2');
+
+    $container.mouseenter(function(){
+      var rgb = [
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255)
+      ]; 
+      $container
+        .css('background-color', 'rgb(' + rgb.join(',') + ')')
+        .css('color', 'rgb(' + [255-rgb[0], 255-rgb[1], 255-rgb[2]].join(',') + ')');
+    });
+  });
+$(function(){
+    var $container = $('#container-3');
+
+    $container.mouseenter(function(){
+      var rgb = [
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255)
+      ]; 
+      $container
+        .css('background-color', 'rgb(' + rgb.join(',') + ')')
+        .css('color', 'rgb(' + [255-rgb[0], 255-rgb[1], 255-rgb[2]].join(',') + ')');
+    });
+  });
+$(function(){
+    var $container = $('#container-4');
+
+    $container.mouseenter(function(){
+      var rgb = [
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255)
+      ]; 
+      $container
+        .css('background-color', 'rgb(' + rgb.join(',') + ')')
+        .css('color', 'rgb(' + [255-rgb[0], 255-rgb[1], 255-rgb[2]].join(',') + ')');
+    });
+  });
+$(function(){
+    var $container = $('#container-5');
+
+    $container.mouseenter(function(){
+      var rgb = [
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255),
+        parseInt(Math.random() * 255)
+      ]; 
+      $container
+        .css('background-color', 'rgb(' + rgb.join(',') + ')')
+        .css('color', 'rgb(' + [255-rgb[0], 255-rgb[1], 255-rgb[2]].join(',') + ')');
+    });
+  });
 
 
 
-
-// common functions used in this project 
+// common functions used in this project -----------------------------------
 function inputFieldValue(id){
     const inputCapture = document.getElementById(id);
     const inputValue = inputCapture.value;
